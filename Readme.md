@@ -8,6 +8,16 @@
  - 支持搜索数据持久化（使用[leveldb](https://github.com/google/leveldb)进行索引存储）
  - 支持用户登录注册搜索数据（使用[Gin框架](https://github.com/gin-gonic/gin)实现）
  - 基于快排和二分法实现搜索结果[排序](https://github.com/MingweiGuo/Goland/blob/main/SearchEngine/core/sorts.go)
+# 开始
+-分词（sego）使用，如何读取悟空数据集，并进行分词
+-leveldb 的使用（包括数据压缩，存储，需要存储什么数据）
+-词典树索引的实现与使用（包括词典树的序列化与反序列化）
+-倒排索引，正排索引（结构体设计，存储什么）
+-快排实现（主要用在搜索结果返回排序）
+-BM25算法
+-搜索的功能实现（goroutinue）
+-Gin实现与前端交互
+-mysql存储用户数据（实现帐号密码登录注册）
 # 运行
 ## Mysql 配置
 需要一张表来存储用户信息
